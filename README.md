@@ -22,7 +22,7 @@ You should use the examples below as request body of
 <a href="https://ecomsearch.docs.apiary.io/#reference/items/items-search/complex-search" target="_blank">
 Items Complex Search</a> reference.
 
-## Search by brand
+## Search by brands
 ```json
 {
   "query": {
@@ -40,28 +40,11 @@ Items Complex Search</a> reference.
         }
       ]
     }
-  },
-  "sort": [
-    {
-      "available": {
-        "order": "desc"
-      }
-    },
-    "_score",
-    {
-      "ad_relevance": {
-        "order": "desc"
-      }
-    },
-    {
-      "views": {
-        "order": "desc"
-      }
-    }
-  ]
+  }
 }
 ```
 
+## Search by brands and categories
 ```json
 {
   "query": {
@@ -74,69 +57,17 @@ Items Complex Search</a> reference.
         },
         {
           "terms": {
-            "brands.name": [ "BRAND1", "BRAND2" ]
-          }
-        }
-      ]
-    }
-  },
-  "sort": [
-    {
-      "available": {
-        "order": "desc"
-      }
-    },
-    "_score",
-    {
-      "ad_relevance": {
-        "order": "desc"
-      }
-    },
-    {
-      "views": {
-        "order": "desc"
-      }
-    }
-  ]
-}
-```
-
-```json
-{
-  "query": {
-    "bool": {
-      "filter": [
-        {
-          "term": {
-            "visible": true
+            "brands.name": [ "BRAND1", "BRAND2", "BRAND3" ]
           }
         },
         {
-          "term": {
-            "brands.id": "BRAND_ID"
+          "terms": {
+            "categories.name": [ "CATEGORY_NAME" ]
           }
         }
       ]
     }
-  },
-  "sort": [
-    {
-      "available": {
-        "order": "desc"
-      }
-    },
-    "_score",
-    {
-      "ad_relevance": {
-        "order": "desc"
-      }
-    },
-    {
-      "views": {
-        "order": "desc"
-      }
-    }
-  ]
+  }
 }
 ```
 
