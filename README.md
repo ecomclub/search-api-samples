@@ -29,11 +29,6 @@ Items Complex Search</a> reference.
     "bool": {
       "filter": [
         {
-          "term": {
-            "visible": true
-          }
-        },
-        {
           "terms": {
             "brands.name": [ "BRAND_NAME" ]
           }
@@ -50,11 +45,6 @@ Items Complex Search</a> reference.
   "query": {
     "bool": {
       "filter": [
-        {
-          "term": {
-            "visible": true
-          }
-        },
         {
           "terms": {
             "brands.name": [ "BRAND1", "BRAND2", "BRAND3" ]
