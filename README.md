@@ -6,8 +6,8 @@
 ## Summary
 1. [Introduction](#introduction)
 2. [Search body examples](#search-body-examples)
-    * [Search by brands](#serch-by-brands)
-    * [Search by brands and categories](#serch-by-brand-and-categories)
+    * [Search by brands](#search-by-brands)
+    * [Search by brands and categories](#search-by-brand-and-categories)
 
 {% raw %}
 
