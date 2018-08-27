@@ -1,7 +1,7 @@
 # Samples of items search
 
 ## Pages
-1. [Samples of items search](https://ecomclub.github.io/search-api-samples/)
+1. [Samples of items search](./)
 
 ## Summary
 1. [Introduction](#introduction)
